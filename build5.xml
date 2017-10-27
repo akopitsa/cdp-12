@@ -1,0 +1,20 @@
+<project name="04c.classpath" default="all" >
+
+      <target name="make.dirs" description="Make some dirs">
+     <mkdir dir="build"/>
+     <mkdir dir="build/class"/>
+      </target>
+
+ <path id="myclasspath" >
+     <fileset dir="lib">
+    <include name="**/*.jar"/>
+     </fileset>
+      </path>
+
+      <target name="all" description="compile java" depends="make.dirs">
+     <javac destdir="build/class" classpathref="myclasspath">
+    <src path="src"/>
+</javac>
+      </target>
+
+</project>

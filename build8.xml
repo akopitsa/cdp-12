@@ -1,0 +1,14 @@
+
+  <project name="08.propfile" default="all" >
+
+        <property file="Ant.properties"/>
+        <property name="month" value="Jan"/>
+        <property name="year" value="1066"/>
+
+        <target name="all" description="Uses properties">
+       <echo>This month is ${month}</echo>
+       <echo>This year is ${year}</echo>
+        </target>
+
+  </project>
+  

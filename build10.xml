@@ -1,0 +1,13 @@
+<project name="10.ifprop" default="all" >
+
+      <target name="debug.build" unless="production">
+     <echo>Pretending to do a debug build</echo>
+      </target>
+
+      <target name="production.build" if="production">
+     <echo>Pretending to do a production build</echo>
+      </target>
+
+      <target name="all" description="Do the build" depends="production.build,debug.build"/>
+
+</project>

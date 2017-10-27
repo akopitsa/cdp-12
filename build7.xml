@@ -1,0 +1,22 @@
+<project name="MyProject" default="all" >
+
+      <property name="month" value="July"/>
+
+ <target name="all" description="Uses properties">
+     <echo>The month is ${month}</echo>
+      </target>
+
+</project>
+
+<!--
+<project name="07.notvars" default="all" >
+
+      <property name="month" value="Jan"/>
+      <property name="month" value="Dec"/>
+
+      <target name="all" description="Uses properties">
+     <echo>This month is ${month}</echo>
+      </target>
+
+</project>
+-->

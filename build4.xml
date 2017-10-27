@@ -1,0 +1,14 @@
+<project name="04b.classpath" default="all" >
+
+      <target name="make.dirs" description="Make some dirs">
+     <mkdir dir="build"/>
+     <mkdir dir="build/class"/>
+      </target>
+
+      <target name="all" description="compile java" depends="make.dirs">
+     <javac destdir="build/class" classpath="extra.jar">
+    <src path="src"/>
+     </javac>
+      </target>
+
+</project>
